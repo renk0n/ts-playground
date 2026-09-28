@@ -9,3 +9,4 @@ const todo = {
 };
 
 console.log(`Todo 1 => ${todo.name}(優先度:${todo.priority}) `);
+console.log(JSON.stringify(todo, null, 2));
