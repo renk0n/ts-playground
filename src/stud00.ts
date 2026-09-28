@@ -8,10 +8,10 @@ const formatter = new Intl.DateTimeFormat("Ja-JP" ,{
     hour: "2-digit",
     minute: "2-digit",
 });
-const strJP = deadline.toLocaleString("Ja-JP",{
-    dateStyle: "long",
-    timeStyle: "short",
-});
-
+const year = deadline.getFullYear();
+const month = String(deadline.getMonth()+1).padStart(2,"0");
+const date = String(deadline.getDate()).padStart(2,"0");
+const hour = String(deadline.getHours()).padStart(2,"0");
+const minute = String(deadline.getMinutes()).padStart(2,"0");
 console.log(formatter.format(deadline));
-console.log(strJP);
+console.log(`${year}年${month}月${date}日${hour}時${minute}分`);
