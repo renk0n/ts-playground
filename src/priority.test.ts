@@ -25,3 +25,7 @@ test("上限より大きい4は無効", () =>{
 test("少数の1.5は無効", () =>{
     expect(isValidPriority(1.5)).toBe(false);
 });
+
+test("上限より大きいかつ少数の5.5は無効", () =>{
+    expect(isValidPriority(4.5)).toBe(false);
+})
