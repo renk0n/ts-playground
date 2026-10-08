@@ -23,3 +23,4 @@ export const getTodoStatus = (todo: Todo, now: Date) => {
         return `【未】${todo.name} (期限まで残り${overtime}時間)`;
     }
 };
+
