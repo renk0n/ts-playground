@@ -10,9 +10,9 @@ const todo: Todo = {
 // Reactの状態管理に適した
 // todo とは参照が異なる updatedTodo を生成
 const updatedTodo: Todo = {
-    ...todo,
-    name: "COBOLの勉強をする", // 変更
-    priority: 3, // 変更
+  ...todo,
+  name: "COBOLの勉強をする", // 変更
+  priority: 3, // 変更
 };
 
 // todo と updatedTodo の参照が「異なること」を確認
